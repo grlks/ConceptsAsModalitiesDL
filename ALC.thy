@@ -2,8 +2,8 @@ theory ALC
   imports Main
 begin
 typedecl i (* type for individuals *)
-type_synonym \<sigma> = "(i\<Rightarrow>bool)"
-type_synonym r = "(i\<times>i)\<Rightarrow>bool"
+type_synonym \<sigma> = "i\<Rightarrow>bool" (* type for concepts *)
+type_synonym r = "i\<times>i\<Rightarrow>bool" (* type for relations*)
 
 abbreviation dlconj :: "\<sigma>\<Rightarrow>\<sigma>\<Rightarrow>\<sigma>" (infixr"\<sqinter>"51)
   where "C\<sqinter>D \<equiv> \<lambda>x. C(x)\<and>D(x)"

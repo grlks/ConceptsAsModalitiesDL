@@ -50,6 +50,6 @@ theorem "\<bottom> \<^bold>\<equiv> \<^bold>\<not>\<top>"
 (* timed out:
 theorem False sledgehammer *)
 (* nitpick: empty assignment *)
-theorem True nitpick[satisfy,user_axioms=true]
+(* theorem True nitpick[satisfy,user_axioms=true] *)
 
 end
